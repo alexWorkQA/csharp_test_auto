@@ -2,11 +2,12 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
 using csharp_auto_tests.Factories;
+using csharp_auto_tests.FunctionalTests;
 
 namespace csharp_auto_tests
 {
     [TestFixture]
-    public class SimpleDraftTest
+    public class SimpleDraftTest:BasicTest
     {
         private const string USER_ID = "mngr151028";
         private const string PASSWORD = "dyhybYq";
@@ -22,7 +23,7 @@ namespace csharp_auto_tests
         [Test]
         public void UserIsAbleToLogin()
         {
-            driver.Url = "http://demo.guru99.com/v4/";
+            app.navigationHelper.openMainPage();
 
         }
     }

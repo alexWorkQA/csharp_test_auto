@@ -1,17 +1,28 @@
 ﻿using csharp_auto_tests.Pages;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
+using OpenQA.Selenium.Support.UI;
+using System;
 
 namespace csharp_auto_tests.Factories
 {
     class PagesFactory
     {
-        static LoginPage loginPage;
-        static MainPage mainPage;
+
+        static IWebDriver driver;
+        static WebDriverWait wait; 
+
+        public static LoginPage loginPage = new LoginPage();
+        public static MainPage mainPage = new MainPage();
 
         public static void initialization()
         {
-            IWebDriver driver = WebDriverFactory.getWebDriver("chrome");
+            driver = WebDriverFactory.getWebDriver("chrome");
+              
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(2);
+            wait = new WebDriverWait(driver, new TimeSpan(2));
+
             PageFactory.InitElements(driver, loginPage);
             PageFactory.InitElements(driver, mainPage);
         }

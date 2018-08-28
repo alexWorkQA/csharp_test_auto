@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_auto_tests.Models
 {
-    class User
+    public class User
     {
         public string UserId { get; set; }
         public string UserPassword { get; set; }
