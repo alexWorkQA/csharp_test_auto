@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace csharp_auto_tests.Pages
 {
-    abstract class BasePage:IPage
+    class MainPage:BasePage,IPage
     {
-
     }
 }

@@ -20,7 +20,7 @@ namespace csharp_auto_tests
 
 
         [Test]
-        public void TestMethod1()
+        public void UserIsAbleToLogin()
         {
             driver.Url = "http://demo.guru99.com/v4/";
 

@@ -59,8 +59,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\IPage.cs" />
+    <Compile Include="Factories\PagesFactory.cs" />
     <Compile Include="Factories\WebDriverFactory.cs" />
+    <Compile Include="FunctionalTests\BasicTest.cs" />
     <Compile Include="FunctionalTests\SimpleDraftTest.cs" />
+    <Compile Include="Helpers\LoginHelper.cs" />
+    <Compile Include="Helpers\NavigationHelper.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Pages\BasePage.cs" />
+    <Compile Include="Pages\LoginPage.cs" />
+    <Compile Include="Pages\MainPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -69,9 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="drivers\" />
-    <Folder Include="Helpers\" />
-    <Folder Include="Models\" />
-    <Folder Include="Pages\" />
+    <Folder Include="TestApplication\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
