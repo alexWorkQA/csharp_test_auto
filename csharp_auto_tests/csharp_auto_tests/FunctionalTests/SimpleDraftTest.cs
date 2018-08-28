@@ -17,14 +17,16 @@ namespace csharp_auto_tests
         public void init()
         {
             driver = WebDriverFactory.getWebDriver("chrome");
+            app.navigationHelper.openMainPage();
         }
 
 
         [Test]
         public void UserIsAbleToLogin()
         {
-            app.navigationHelper.openMainPage();
-
+            app.loginHelper.loginToSite(testValidUser);
+            Assert.AreEqual(testValidUser.UserId,app.loginHelper.getManagerIdString());
+            
         }
     }
 }

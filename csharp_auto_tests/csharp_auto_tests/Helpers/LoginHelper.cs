@@ -15,5 +15,12 @@ namespace csharp_auto_tests.Helpers
             PagesFactory.loginPage.loginToSite(user);
         }
 
+        public string getManagerIdString()
+        {
+            string managerId = PagesFactory.mainPage.getManagerId();
+            string[] array = managerId.Split(':');
+            return array[1].Trim();
+        }
+
     }
 }

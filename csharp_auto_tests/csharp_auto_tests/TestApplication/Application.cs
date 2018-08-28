@@ -22,7 +22,7 @@ namespace csharp_auto_tests.TestApplication
 
         public void finish()
         {
-            
+            PagesFactory.closeWebClient();
         }
     }
 }

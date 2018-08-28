@@ -13,7 +13,7 @@ namespace csharp_auto_tests.Factories
         static WebDriverWait wait; 
 
         public static LoginPage loginPage = new LoginPage();
-        public static MainPage mainPage = new MainPage();
+        public static ManagerPage mainPage = new ManagerPage();
 
         public static void initialization()
         {
@@ -25,6 +25,12 @@ namespace csharp_auto_tests.Factories
 
             PageFactory.InitElements(driver, loginPage);
             PageFactory.InitElements(driver, mainPage);
+        }
+
+        public static void closeWebClient()
+        {
+            driver.Quit();
+            //driver.Close();
         }
 
     }
