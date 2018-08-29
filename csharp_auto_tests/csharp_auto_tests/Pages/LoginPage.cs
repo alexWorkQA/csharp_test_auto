@@ -22,7 +22,7 @@ namespace csharp_auto_tests.Pages
             loginField.SendKeys(user.UserId);
             passwordField.SendKeys(user.UserPassword);
             loginButton.Click();
-            return new MainPage();
+            return new ManagerPage();
         }
 
     }

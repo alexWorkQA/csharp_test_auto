@@ -8,19 +8,27 @@ namespace csharp_auto_tests.FunctionalTests
     [TestFixture]
     public class BasicTest
     {
-        User testValidUser;
+        public User testValidUser;
         public  Application app;
+        public Account testAccount;
 
         [SetUp]
         public void setUpTests()
         {
             testValidUser = new User();
-            testValidUser.UserId = "test";
-            testValidUser.UserPassword = "test";
+            testValidUser.UserId = "mngr151028";
+            testValidUser.UserPassword = "dyhybYq";
 
             app = new Application();
-
             app.start();
+            testAccount = Account.getDafaultAccount();
+
+        }
+
+        [TearDown]
+        public void completeTest()
+        {
+            app.finish();
         }
     }
 }
