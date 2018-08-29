@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace csharp_auto_tests.Helpers
 {
-    class TransactionHelper : ITransaction
+    public class TransactionHelper : ITransaction
     {
         public void deposit(string account_id, string amount, string description)
         {

@@ -10,6 +10,7 @@ namespace csharp_auto_tests.FunctionalTests
     {
         public User testValidUser;
         public  Application app;
+        public Account testAccount;
 
         [SetUp]
         public void setUpTests()
@@ -19,8 +20,9 @@ namespace csharp_auto_tests.FunctionalTests
             testValidUser.UserPassword = "dyhybYq";
 
             app = new Application();
-
             app.start();
+            testAccount = Account.getDafaultAccount();
+
         }
 
         [TearDown]

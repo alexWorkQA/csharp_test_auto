@@ -9,14 +9,12 @@ namespace csharp_auto_tests
     [TestFixture]
     public class SimpleDraftTest:BasicTest
     {
-        private const string USER_ID = "mngr151028";
-        private const string PASSWORD = "dyhybYq";
-        private IWebDriver driver;
+        //private const string USER_ID = "mngr151028";
+        //private const string PASSWORD = "dyhybYq";
 
         [SetUp]
         public void init()
         {
-            driver = WebDriverFactory.getWebDriver("chrome");
             app.navigationHelper.openMainPage();
         }
 

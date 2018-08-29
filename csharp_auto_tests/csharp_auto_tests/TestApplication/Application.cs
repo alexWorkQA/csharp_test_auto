@@ -13,6 +13,8 @@ namespace csharp_auto_tests.TestApplication
     {
         public NavigationHelper navigationHelper = new NavigationHelper();
         public LoginHelper loginHelper = new LoginHelper();
+        public TransactionHelper transactionHelper = new TransactionHelper();
+        public AccountHelper accountHelper = new AccountHelper();
 
         public void start()
         {
