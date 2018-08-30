@@ -6,12 +6,9 @@ C:\GIT_repos\csharp_test_auto\csharp_auto_tests\csharp_auto_tests\bin\Debug\Mono
 C:\GIT_repos\csharp_test_auto\csharp_auto_tests\csharp_auto_tests\bin\Debug\csharp_auto_tests.dll.config
 C:\GIT_repos\csharp_test_auto\csharp_auto_tests\csharp_auto_tests\bin\Debug\csharp_auto_tests.dll
 C:\GIT_repos\csharp_test_auto\csharp_auto_tests\csharp_auto_tests\bin\Debug\csharp_auto_tests.pdb
-C:\GIT_repos\csharp_test_auto\csharp_auto_tests\csharp_auto_tests\bin\Debug\Newtonsoft.Json.dll
 C:\GIT_repos\csharp_test_auto\csharp_auto_tests\csharp_auto_tests\bin\Debug\nunit.framework.dll
-C:\GIT_repos\csharp_test_auto\csharp_auto_tests\csharp_auto_tests\bin\Debug\System.ValueTuple.dll
 C:\GIT_repos\csharp_test_auto\csharp_auto_tests\csharp_auto_tests\bin\Debug\WebDriver.dll
 C:\GIT_repos\csharp_test_auto\csharp_auto_tests\csharp_auto_tests\bin\Debug\WebDriver.Support.dll
-C:\GIT_repos\csharp_test_auto\csharp_auto_tests\csharp_auto_tests\bin\Debug\Newtonsoft.Json.xml
 C:\GIT_repos\csharp_test_auto\csharp_auto_tests\csharp_auto_tests\bin\Debug\nunit.framework.pdb
 C:\GIT_repos\csharp_test_auto\csharp_auto_tests\csharp_auto_tests\bin\Debug\nunit.framework.xml
 C:\GIT_repos\csharp_test_auto\csharp_auto_tests\csharp_auto_tests\bin\Debug\WebDriver.xml
@@ -36,3 +33,4 @@ E:\ЛПР\csharp_test_auto\csharp_auto_tests\csharp_auto_tests\bin\Debug\WebDriv
 E:\ЛПР\csharp_test_auto\csharp_auto_tests\csharp_auto_tests\obj\Debug\csharp_auto_tests.csprojResolveAssemblyReference.cache
 E:\ЛПР\csharp_test_auto\csharp_auto_tests\csharp_auto_tests\obj\Debug\csharp_auto_tests.dll
 E:\ЛПР\csharp_test_auto\csharp_auto_tests\csharp_auto_tests\obj\Debug\csharp_auto_tests.pdb
+C:\GIT_repos\csharp_test_auto\csharp_auto_tests\csharp_auto_tests\obj\Debug\csharp_auto_tests.csprojResolveAssemblyReference.cache

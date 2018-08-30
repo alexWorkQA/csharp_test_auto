@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_auto_tests.Models
 {
-    class Transaction
+    public class Transaction
     {
         public string TransactionID { get; set; }
         public string AccountNo { get; set; }

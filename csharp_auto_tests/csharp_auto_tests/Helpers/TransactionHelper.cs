@@ -1,4 +1,6 @@
 ﻿using csharp_auto_tests.Contracts;
+using csharp_auto_tests.Factories;
+using csharp_auto_tests.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,12 +11,12 @@ namespace csharp_auto_tests.Helpers
 {
     public class TransactionHelper : ITransaction
     {
-        public void deposit(string account_id, string amount, string description)
+        public void deposit(Transaction transaction)
         {
-            throw new NotImplementedException();
+            PagesFactory.depositPage.fillAmountDepositForm(transaction);
         }
 
-        public void withdraw(string account_id, string amount, string description)
+        public void withdraw(Transaction transaction)
         {
             throw new NotImplementedException();
         }

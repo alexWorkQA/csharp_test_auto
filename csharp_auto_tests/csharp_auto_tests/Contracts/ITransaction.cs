@@ -1,4 +1,5 @@
-﻿using System;
+﻿using csharp_auto_tests.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace csharp_auto_tests.Contracts
 {
     interface ITransaction
     {
-        void deposit(string account_id, string amount, string description);
-        void withdraw(string account_id, string amount, string description);
+        void deposit(Transaction transaction);
+        void withdraw(Transaction transaction);
     }
 }

@@ -9,6 +9,7 @@ namespace csharp_auto_tests.Contracts
 {
     interface IAccountHelper
     {
-        string getCurrentBalance(Account account);
+        void openAccountDetails(Account account);
+        string getCurrentBalance();
     }
 }

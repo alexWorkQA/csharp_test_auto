@@ -23,8 +23,7 @@ namespace csharp_auto_tests
         public void UserIsAbleToLogin()
         {
             app.loginHelper.loginToSite(testValidUser);
-            Assert.AreEqual(testValidUser.UserId,app.loginHelper.getManagerIdString());
-            
+            Assert.AreEqual(testValidUser.UserId,app.loginHelper.getManagerIdString());            
         }
     }
 }

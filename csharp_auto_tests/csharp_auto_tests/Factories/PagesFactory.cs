@@ -15,6 +15,7 @@ namespace csharp_auto_tests.Factories
         public static LoginPage loginPage = new LoginPage();
         public static ManagerPage mainPage = new ManagerPage();
         public static BalanceEnquiryPage balancePage = new BalanceEnquiryPage();
+        public static DepositPage depositPage = new DepositPage();
 
         public static void initialization()
         {
@@ -27,10 +28,12 @@ namespace csharp_auto_tests.Factories
             PageFactory.InitElements(driver, loginPage);
             PageFactory.InitElements(driver, mainPage);
             PageFactory.InitElements(driver, balancePage);
+            PageFactory.InitElements(driver, depositPage);
         }
 
         public static void closeWebClient()
         {
+            driver.Close();
             driver.Quit();
             //driver.Close();
         }

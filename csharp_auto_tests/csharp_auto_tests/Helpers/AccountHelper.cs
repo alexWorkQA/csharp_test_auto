@@ -11,12 +11,21 @@ namespace csharp_auto_tests.Helpers
 {
     public class AccountHelper:IAccountHelper
     {
-        
-        public string getCurrentBalance(Account account)
+
+        public void openAccountDetails(Account account)
         {
             string accountId = account.Account_Id;
             PagesFactory.balancePage.submitAccountNo(accountId);
+        }
+        
+        public string getCurrentBalance()
+        {
             return PagesFactory.balancePage.getBalanceAmount();            
+        }
+
+        public string getAccountType()
+        {         
+            return PagesFactory.balancePage.getAccountType();
         }
     }
 }

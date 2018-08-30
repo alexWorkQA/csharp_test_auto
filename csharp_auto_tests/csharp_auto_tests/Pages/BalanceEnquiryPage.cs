@@ -19,7 +19,11 @@ namespace csharp_auto_tests.Pages
 
         [FindsBy(How = How.XPath, Using = ".//td[contains(text(),'Balance')]/following-sibling::td")]
         private IWebElement balanceAmount;
-        
+
+        [FindsBy(How = How.XPath, Using = ".//td[contains(text(),'Type of Account')]/following-sibling::td")]
+        private IWebElement typeOfAccount;
+
+
         public BalanceEnquiryPage submitAccountNo(string accountNo)
         {
             accountNoField.SendKeys(accountNo);
@@ -31,6 +35,11 @@ namespace csharp_auto_tests.Pages
         {
             return balanceAmount.Text;
         } 
+
+        public string getAccountType()
+        {
+            return typeOfAccount.Text;
+        }
 
     }
 }
